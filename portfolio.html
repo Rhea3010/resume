@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-dark" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-dark">
+            <div class="media d-flex align-items-center"><img src="/images/rhea_1.png" alt="..." width="120" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                <div class="media-body">
+                    <br> <br><br><br><br><br><br><br>
+                    <h4 class="m-0 text-gray h4">Rhea Jain</h4>
+                    <p class="font-weight-light text-muted mb-0">Web developer</p>
+
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="/main.html" class="nav-link text-gray font-italic bg-dark text nav-link:hover  ">
+                    <i class=" fa fa-th-large mr-3 text-primary fa-fw "></i>Home
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-gray font-italic bg-dark text  ">
+                    <i class=" fa fa-th-large mr-3 text-primary fa-fw "></i> About
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#ccc" class="nav-link text-gray font-italic bg-dark text ">
+                    <i class="fa fa-address-card mr-3 text-primary fa-fw"></i> Resume
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/portfolio.html" class="nav-link text-gray font-italic bg-dark text ">
+                    <i class="fa fa-cubes mr-3 text-primary fa-fw"></i> Portfolio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-gray font-italic bg-dark text ">  Services
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a href="#ddd" class="nav-link text-gray font-italic bg-dark text ">Contact
+                    </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End vertical navbar -->
+    <style>
+        .vertical-nav {
+            min-width: 17rem;
+            width: 17rem;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+        }
+        
+        .page-content {
+            width: calc(100% - 17rem);
+            margin-left: 17rem;
+            transition: all 0.4s;
+        }
+        /* for toggle behavior */
+        
+        #sidebar.active {
+            margin-left: -17rem;
+        }
+        
+        #content.active {
+            width: 100%;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            #sidebar {
+                margin-left: -17rem;
+            }
+            #sidebar.active {
+                margin-left: 0;
+            }
+            #content {
+                width: 100%;
+                margin: 0;
+            }
+            #content.active {
+                margin-left: 17rem;
+                width: calc(100% - 17rem);
+            }
+        }
+        
+        body {
+            background: #599fd9;
+            background: -webkit-linear-gradient(to right, hotpink, salmon);
+            background: linear-gradient(to right, hotpink, salmon);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .separator {
+            margin: 3rem 0;
+            border-bottom: 1px dashed hotpink;
+        }
+        
+        .text-uppercase {
+            letter-spacing: 0.1em;
+        }
+        
+        .text-gray {
+            color: hotpink;
+        }
+        
+        .text {
+            font-size: large;
+        }
+        
+        .img-thumbnail {
+            background-color: hotpink;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .nav-link:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

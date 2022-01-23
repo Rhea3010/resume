@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        .vertical-nav {
+            min-width: 17rem;
+            width: 17rem;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+        }
+        
+        .page-content {
+            width: calc(100% - 17rem);
+            margin-left: 17rem;
+            transition: all 0.4s;
+        }
+        /* for toggle behavior */
+        
+        #sidebar.active {
+            margin-left: -17rem;
+        }
+        
+        #content.active {
+            width: 100%;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            #sidebar {
+                margin-left: -17rem;
+            }
+            #sidebar.active {
+                margin-left: 0;
+            }
+            #content {
+                width: 100%;
+                margin: 0;
+            }
+            #content.active {
+                margin-left: 17rem;
+                width: calc(100% - 17rem);
+            }
+        }
+        
+        body {
+            background: #599fd9;
+            background: -webkit-linear-gradient(to right, hotpink, salmon);
+            background: linear-gradient(to right, hotpink, salmon);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .separator {
+            margin: 3rem 0;
+            border-bottom: 1px dashed hotpink;
+        }
+        
+        .text-uppercase {
+            letter-spacing: 0.1em;
+        }
+        
+        .text-gray {
+            color: hotpink;
+        }
+        
+        .text {
+            font-size: large;
+        }
+        
+        .img-thumbnail {
+            background-color: hotpink;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .nav-link:hover {
+            color: white;
+        }
+        
+        .txt {
+            margin-left: 280px;
+        }
+        
+        .qual {
+            margin-bottom: 10px;
+        }
+        
+        .bar {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        .space {
+            margin-top: 64px;
+            margin-left: 150px;
+        }
+        
+        .heading {
+            margin-top: 20px;
+        }
+        
+        .h1 {
+            text-shadow: 2px 2px 4px deeppink;
+        }
+        
+        .h2 {
+            text-shadow: 2px 2px 4px white;
+        }
+    </style>
+    <title>Hello, world!</title>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-dark" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-dark">
+            <div class="media d-flex align-items-center"><img src="/images/rhea_1.png" alt="..." width="120" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                <div class="media-body">
+                    <br> <br><br><br><br><br><br><br>
+                    <h4 class="m-0 text-gray h4">Rhea Jain</h4>
+                    <p class="font-weight-light text-muted mb-0">Web developer</p>
+
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="/main.html" class="nav-link text-gray font-italic bg-dark text nav-link:hover  ">
+                    <i class=" fa fa-th-large mr-3 text-primary fa-fw "></i>Home
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-gray font-italic bg-dark text  ">
+                    <i class=" fa fa-th-large mr-3 text-primary fa-fw "></i> About
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#ccc" class="nav-link text-gray font-italic bg-dark text ">
+                    <i class="fa fa-address-card mr-3 text-primary fa-fw"></i> Resume
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/portfolio.html" class="nav-link text-gray font-italic bg-dark text ">
+                    <i class="fa fa-cubes mr-3 text-primary fa-fw"></i> Portfolio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-gray font-italic bg-dark text ">  Services
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a href="#ddd" class="nav-link text-gray font-italic bg-dark text ">Contact
+                    </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End vertical navbar -->
+
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col txt">
+            <h2 class="h1">About</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem
+                hic quas.</p>
+
+        </div>
+    </div>
+    <div class="row txt">
+        <div class="col-4 ">
+            <img src="/images/rhea_1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-8  ">
+            <h2 class="h1">Creative Designer & Web Developer.</h2>
+            <p>Hi There! I am RHEA JAIN. I am a Creative Designer and Developer who is very passionate and very determinant to learn new things. </p>
+
+            <h5 class="qual ">&#10148; <b>Birthday</b>: 3 Oct 2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10148;<b>Age </b>                : 21
+            </h5>
+            <h5 class="qual "> &#10148;<b> Website</b>: jain.rhea03@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10148;<b> Degree</b>: BCA</h5>
+            <h5 class="qual ">&#10148; <b>Phone</b>: 9811310723&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &#10148; <b> Email </b>: email@example.com
+            </h5>
+            <h5 class="qual ">&#10148;<b> City</b>: Noida&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &#10148;
+                <b>Freelance</b>: Available</h5>
+
+
+            <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur
+                qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+        </div>
+    </div>
+    <div class="row txt ">
+        <div class="col 12 col-sm-5 ">
+            <h2 class="heading h1 ">Skills</h2>
+            <p>HTML</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 90% " aria-valuenow="90 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+            <p>CSS</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 75% " aria-valuenow="75 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+            <p>JAVASCRIPT</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 30% " aria-valuenow="30 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+        </div>
+        <div class=" col 12 col-sm-5 space ">
+            <p>PYTHON</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 80% " aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+            <p>JAVA</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 60% " aria-valuenow="60 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+            <p>MYSQL</p>
+            <div class="progress bar ">
+                <div class="progress-bar progress-bar-striped bg-danger " role="progressbar " style="width: 70% " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="50 "></div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col ">
+                <a name="ccc"></a>
+                <h2 class="h1 ">Resume</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                    quidem hic quas.</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col ">
+                <h4 class="h2">Summary</h4>
+                <h5>Rhea Jain</h5>
+                <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+
+                </p>
+                <ul>
+                    <li>Kendriya Vihar, Noida
+                    </li>
+                    <li>9811310723</li>
+                    <li>jain.rhea03@gmail.com</li>
+                </ul>
+                <br>
+                <h4 class="h2">Education</h4>
+                <h5>Qualification</h5>
+                <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+
+                </p>
+                <ul>
+                    <li>Passed my 10th from The Khaitan-77.9%
+                    </li>
+                    <li>Passed my 10th from The Khaitan-86.2%</li>
+                    <li>Currently pursuing BCA from Bharati Vidyapeeth</li>
+                </ul>
+            </div>
+
+            <div class="col ">
+                <h4 class="h2">Curriculars</h4>
+                <h5>Co Curriculars</h5>
+                <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+
+                </p>
+                <ul>
+                    <li>Python from Udemy
+                    </li>
+                    <li>Cyber Security from CISCO</li>
+                    <li>Java from Edureca</li>
+                </ul>
+
+                <h5>Extra Curriculars</h5>
+                <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                </p>
+                <ul>
+                    <li>Kendriya Vihar, Noida
+                    </li>
+                    <li>9811310723</li>
+                    <li>jain.rhea03@gmail.com</li>
+                </ul>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col ">
+                <a name="ddd"></a>
+                <h2 class="h1 ">Contact</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                    quidem hic quas.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col ">
+                <h4>Social Media Handles</h4>
+                <img src="/images/j.jpg" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Location:</h5> Kendriya Vihar, Noida <br>
+                <img src="/images/p.jpg" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Call: </h5>9811310723<br>
+                <img src="/images/u.jpeg" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Email:</h5> jain.rhea03@gmail.com<br>
+            </div>
+
+            <div class="col">
+                <h4>Social Media Handles</h4>
+                <img src="/images/in.jpg" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Instagram</h5> <br>
+                <img src="/images/f.jpg" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Facebook</h5> <br>
+                <img src="/images/twitter.png" width="40px" alt="" class="mr-3 rounded-circle bar ">
+                <h5 style="display: inline;">Twitter</h5> <br>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
